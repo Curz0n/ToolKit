@@ -29,6 +29,7 @@ def createdNewModule(moduleName):
 	updateFiles = ["src/main/assets/xposed_init",
 	"src/main/AndroidManifest.xml",
 	"src/main/res/values/strings.xml",
+	"build.gradle",
 	"src/main/java/com/xposed/hooks/{0}/XposedHookLoadPackageEntry.java".format(moduleName)]
 	for file in updateFiles:
 		filePath = os.path.join(moudlePath,file);
